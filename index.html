@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7f6d895a33.js" crossorigin="anonymous"></script>
+    </head>
+   <body>
+            
+                <!-- the nav bar section  -->
+            <nav>
+
+                <div class="row">
+                        <h1 class="welcome"></h1>
+                    <div class="tab-links">
+                        <button class="tab default" onclick="toggleTab(event, 'home')">home</button> 
+                        <button class="tab" onclick="toggleTab(event, 'about')">about</button>
+                        <button class="tab" onclick="toggleTab(event, 'projects')">projects</button>
+                        <button class="tab" onclick="toggleTab(event, 'contact')">contact</button> 
+                    </div>   
+                </div>
+               
+            </nav>
+            <!-- end of nav bar -->
+
+
+            <!-- the main page content -->
+        <div class="main-content">
+
+            <div class="row-1" >
+
+                <div class="col-1"> 
+                        <!-- home section -->
+                        <div class="tabcontent" id="home"> 
+                            <h1>Hi! I'm </h1>
+                            <p class="name">
+                                <b>Chukwuebuka Anthony</b> <br>
+                                <span class="occupation">
+                                    Frontend developer - UI/UX Designer.
+                                </span>
+                            </p>
+                            <div class="stack">
+                                <h4>Stacks</h4>
+                                <p>
+                                    <span class="stack"><i class="fa-brands fa-html5"></i></span>
+                                    <span class="stack"><i class="fa-brands fa-css"></i></span>
+                                    <span class="stack"><i class="fa-brands fa-square-js"></i></span>
+                                    <span class="stack"><i class="fa-brands fa-react"></i></span>
+                                    <span class="stack"> <i class="fa-brands fa-github"></i></span>
+                                    <span class="stack"><i class="fa-brands fa-figma"></i></span>
+                                </p>  
+                            </div>
+                        </div>
+<!-- end of home col-1 -->
+
+                        <!-- about section  -->
+                        <div class="tabcontent" id="about">
+                            <h2 class="headings">About Me</h2>
+                            <div class="about-text-container">
+                                <p class="about-text">
+                                    I am a passionate frontend developer with a love for creating beautiful and functional web applications.
+                                    I have honed my skills in 
+                                    <b>HTML, CSS, JavaScript, React and git/gitHub</b>
+                                    In my free time, I enjoy exploring new technologies and working on personal projects.
+                                </p>
+
+                            </div>
+                            
+                        </div>
+<!-- about end -->
+
+
+                        <!-- projects section -->
+                        <div class="tabcontent" id="projects">
+                            <h2 class="headings">Projects</h2>
+                            <div class="project-container">
+                                <p>Here are some of the projects I have worked on:</p>
+                                <hr>
+
+                                <ul class="project-list">
+                                    <li>
+                                        <h4>Project 1</h4>
+                                        <a href="#">
+                                            <img src="project1.jpg" alt="Project 1 Screenshot">
+                                        </a>
+                                        <p>A personal portfolio website.</p>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>Project 2</h4>
+                                        <a href="#">
+                                            <img src="project2.jpg" alt="Project 2 Screenshot">
+                                        </a>
+                                        <p>An e-commerce site.</p>
+                                    </li>
+                                    <hr>
+                                    <li>
+                                        <h4>Project 3</h4>
+                                        <a href="#">
+                                            <img src="project3.jpg" alt="Project 3 Screenshot">
+                                        </a>
+                                        
+                                        <p>A weather application</p>
+                                    </li>
+                                </ul>
+                             </div>
+                        </div>
+<!-- end of project section -->
+                        
+                        
+                        <!-- contact form section-->
+                        <div class="tabcontent"  id="contact">
+                            <h2 class='headings'>contact</h2>
+                            <div class="form">
+
+                                <div class="contact-detail-container">
+                                    <p class="fc">I want to hear from you:</p>
+                                    <p><b>Mobile: </b> <br>0892038741</p>
+                                    <p><b>Email:</b><br><a href="mailto:tonyone198@gmail.com">tonyone198@gmail.com</a></p>
+                                </div>
+
+                                <div class="form-container">
+                                    <form action="https://formsubmit.co/tonyone198@gmail.com" method="POST" autocomplete="on" class="contact-form" >
+
+                                        <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>
+
+                                        
+                                        <input type="email" id="email" name="email" placeholder="enter your email" required>  <br>
+
+                                        
+                                        <textarea id="message" name="message" rows="4" placeholder="type your text..."></textarea><br>
+
+                                        <button type="submit">Send Message</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+<!-- end of contact form -->
+
+
+                 <!-- the header section -->
+                <header class="col-2">
+                    <section class="image-container">
+                            <img src="image/my-profile-picture.jpg" alt="Profile Picture" class="profile-pic"  >
+                        <div class="profile-info">
+                            <h3>Anthony Chukwuebuka</h3>
+                            <p>Frontend Developer & UX/ UI Designer </p>
+                        </div>
+                    </section>     
+                </header>
+<!-- end of header col-2-->
+
+            </div> 
+<!-- end of row-1 -->
+
+        </div>
+<!-- end of main content -->
+
+
+        <!-- footer section -->
+        <footer>
+            <div class="footer-content">
+                <h4>Follow me on:</h4>
+                <ul>
+                    <li>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul> 
+                <p> &copy; 2023 Anthony. All rights reserved.</p>    
+            </div>
+            
+        </footer>
+
+<!-- end of footer -->
+           
+        <script src="script.js"></script>
+   </body>
+
+</html>
